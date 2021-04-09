@@ -258,7 +258,7 @@ namespace zapread.com.Controllers
                 }
                 ZapIcon newIcon = new ZapIcon()
                 {
-                    Icon = icon,
+                    Icon = icon.SanitizeXSS(),
                     Lib = "fa",
                     NumUses = 0,
                 };
